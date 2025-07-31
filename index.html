@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedConnect – Find Medicine Nearby</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-image"></div>
+
+  <section id="welcomeSection" class="section visible">
+    <div class="welcome-container">
+      <img src="assets/welcome.gif" alt="Welcome GIF" class="welcome-gif" />
+      <p class="disclaimer">
+        Welcome to MedConnect!<br />
+        This project is part of an internship and shows data only from a static dataset.<br />
+        It does not reflect real-time medicine availability.
+      </p>
+    </div>
+  </section>
+
+  <section id="searchSection" class="section hidden">
+    <div class="container">
+      <h1>MedConnect</h1>
+      <p>Find nearby medical stores that have your medicine</p>
+      <form id="searchForm">
+        <input type="text" id="medicineInput" placeholder="Enter medicine name..." required />
+        <input type="text" id="userAddress" placeholder="Enter your location..." required />
+        <button type="submit">Search</button>
+      </form>
+      <div id="result"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
