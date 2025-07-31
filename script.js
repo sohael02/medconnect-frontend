@@ -48,7 +48,7 @@ document.getElementById('searchForm').addEventListener('submit', async function 
     const userLat = geoData.features[0].geometry.coordinates[1];
     const userLng = geoData.features[0].geometry.coordinates[0];
 
-    const response = await fetch(''https://medconnect-aquz.onrender.com/search', {
+    const response = await fetch('https://medconnect-aquz.onrender.com/search', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ medicine, userLat, userLng })
